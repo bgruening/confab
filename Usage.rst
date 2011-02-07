@@ -14,6 +14,8 @@ confab
 
 The *inputfile* should contain one or more 3D structures (note that 2D structures will generate erroneous results). Generated conformers are written to the *outputfile*. All of the conformers for a particular molecule will have the same title as the original molecule.
 
+Supported file formats are SDF (recommended), MOL2 and PDB.
+
 -i <format>
     Input file format
 

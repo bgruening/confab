@@ -53,7 +53,7 @@ The following are **optional** when compiling Confab, but if not available some 
 Basic build procedure
 ~~~~~~~~~~~~~~~~~~~~~
 
-The basic build procedure is the same for all platforms and will be described first. After this, we will look at variations for particular platforms.
+The basic build procedure will be described first. After this, we look at how to install locally (a local installation is recommended to avoid conflicts with an existing installation of Open Babel).
 
 .. highlight:: console
 
@@ -84,7 +84,9 @@ The basic build procedure is the same for all platforms and will be described fi
 Local build
 ~~~~~~~~~~~
 
-By default, Confab is installed in :file:`/usr/local/` on a Unix-like system. This requires root access (or ``sudo``). If instead you wish to install into a local directory, the following instructions should be followed:
+By default, Confab is installed in :file:`/usr/local/` on a Unix-like system. This requires root access (or ``sudo``). In addition, if you have an existing installation of Open Babel, this may conflict with Confab.
+
+To avoid these issues, you can install into a local directory as follows:
 
 1. To configure :program:`cmake` to install into :file:`~/Tools/confab-install`, for example, you would do the following::
 

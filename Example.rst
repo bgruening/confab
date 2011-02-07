@@ -78,4 +78,4 @@ To check how many of the generated conformers are within 1.0 A RMSD of the origi
 
   **Finishing calcrmsd
 
-.. _bostrom.sdf: http://www.google.com
+.. _bostrom.sdf: _static/bostrom.sdf

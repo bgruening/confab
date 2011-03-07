@@ -32,6 +32,8 @@ Supported file formats are SDF (recommended), MOL2 and PDB.
     Energy cutoff (default 50.0 kcal/mol)
 -c <#confs>
     Max number of conformers to test (default is 1 million)
+-a
+    Include the input conformation as the first conformer
 -v
     Verbose - display information on torsions found
 

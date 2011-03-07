@@ -19,7 +19,7 @@ Windows
 Linux or MacOSX
 ---------------
 
-Confab is essentially a modified version of Open Babel 2.3dev with additional components. The build instructions here are based on those for Open Babel 2.3.
+Confab is essentially a modified version of Open Babel 2.3dev with additional components. The build instructions here are based on those for Open Babel 2.3. We recommend that you install locally (see below) to avoid conflicts with an existing Open Babel installation.
 
 .. _requirements:
 

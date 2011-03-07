@@ -14,7 +14,7 @@ Windows
 
 4. Try ``confab -h`` and ``calcrmsd -h`` to see help text.
 
-.. _zip file: http://confab.googlecode.com/files/Confab-1.0.zip
+.. _zip file: http://confab.googlecode.com/files/Confab-1.0.1.zip
 
 Linux or MacOSX
 ---------------
@@ -43,7 +43,7 @@ To build Confab, you **need** the following:
 
   Eigen may be available through your package manager (the *libeigen2-dev* package in Ubuntu). Alternatively, Eigen is available from http://eigen.tuxfamily.org. It doesn't need to be compiled or installed. Just unzip it and specify its location when configuring :program:`cmake` (see below) using ``-DEIGEN2_INCLUDE_DIR=whereever``.
 
-.. _source code: http://confab.googlecode.com/files/Confab-1.0.tar.gz
+.. _source code: http://confab.googlecode.com/files/Confab-1.0.1.tar.gz
 
 The following are **optional** when compiling Confab, but if not available some features will be missing:
 
@@ -57,19 +57,19 @@ The basic build procedure will be described first. After this, we look at how to
 
 .. highlight:: console
 
-1. The recommended way to build Confab is to use a separate source and build directory; for example, :file:`confab-1.0` and :file:`build`. The first step is to create these directories::
+1. The recommended way to build Confab is to use a separate source and build directory; for example, :file:`Confab-1.0.1` and :file:`build`. The first step is to create these directories::
 
-        $ tar zxf confab-1.0.tar.gz   # (this creates confab-1.0)
+        $ tar zxf Confab-1.0.1.tar.gz   # (this creates Confab-1.0.1)
         $ mkdir build
 
 2. Now you need to run :program:`cmake` to configure the build. The following will configure the build to use all of the default options::
 
         $ cd build
-        $ cmake ../confab-1.0
+        $ cmake ../Confab-1.0.1
 
 3. If you need to specify an option, use the ``-D`` switch to :program:`cmake`. For example, the following line sets the value of ``CMAKE_INSTALL_PREFIX`` and ``CMAKE_BUILD_TYPE``::
 
-        $ cmake ../confab-1.0 -DCMAKE_INSTALL_PREFIX=~/Tools -DCMAKE_BUILD_TYPE=DEBUG
+        $ cmake ../Confab-1.0.1 -DCMAKE_INSTALL_PREFIX=~/Tools -DCMAKE_BUILD_TYPE=DEBUG
 
    We will discuss various possible options later.
 
@@ -90,7 +90,7 @@ To avoid these issues, you can install into a local directory as follows:
 
 1. To configure :program:`cmake` to install into :file:`~/Tools/confab-install`, for example, you would do the following::
 
-        $ cmake ../confab-1.0 -DCMAKE_INSTALL_PREFIX=~/Tools/confab-install
+        $ cmake ../Confab-1.0.1 -DCMAKE_INSTALL_PREFIX=~/Tools/confab-install
 
 2. Then you can run :command:`make` and :command:`make install` without needing root access::
 
